@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yassin Moumni | Portfolio site</title>
+    <link rel="icon" href="../img/favicon.ico" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="../css/stylesheet.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    >
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="initials">
+        <p>Yassin Moumni</p>
+      </div>
+
+      <div class="navlinks">
+        <ul>
+          <li> <a href="../index.html">Home</a></li>
+          <li> <a href="cv.html">Cv</a></li>
+          <li> <a href="ervaringen.html">Ervaringen</a></li>
+          <li> <a href="interesses.html" >Interesses</a></li>
+          <li> <a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="main">
+      <h1>Contact</h1>
+
+        <form action="../php/send-mail.php" method="POST">
+            <div class="naamrow">
+                <div class="formfield">
+                    <label for="vnaam">Voornaam</label>
+                    <input type="text" name="vnaam" id="vnaam" required>
+                </div>
+                <div class="formfield">
+                    <label for="anaam">Achternaam</label>
+                    <input type="text" name="anaam" id="anaam">
+                </div>
+            </div>
+            <div class="formfield">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+<div class="formfield">
+    <label for="onderwerp">Onderwerp</label>
+    <input type="text" name="onderwerp" id="onderwerp" required>
+</div>
+
+            <div class="formfield">
+                <label for="bericht">Bericht</label>
+                <textarea name="bericht" id="bericht" cols="30" rows="10" required></textarea>
+            </div>
+            <div class="formfield">
+                <input  type="submit" value="Verzenden" id="verzenden" name="verzenden">
+              </div>
+        </form>
+
+      <div id="contactcard">
+
+       <h3>Neem contact met me op via email of telefoon!</h3>
+         <div class="linkwrapper">
+        <a href="tel:0411111111" class="cta">Telefoon</a>
+        <a href="mailto:notyassinmoumni@email.com" class="cta">Email</a>
+      </div>
+    </div>
+
+   
+    </main>
+  </body>
+</html>
